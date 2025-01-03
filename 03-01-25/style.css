@@ -4,7 +4,6 @@
   position:fixed;
 scroll-behavior: smooth;
 left:1300px;
-/*  */
 text-decoration: none;
 }
 img{
@@ -14,6 +13,17 @@ img{
 header{
     position:relative;
     top:0px;
+}
+.nav-bar{
+    
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    font-size: larger;
+    letter-spacing: 5px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
 }
 
 .anchar{
