@@ -1,0 +1,188 @@
+
+                         /*Task-1*/
+
+
+.box p {
+  padding: 20px;
+  border: 3px solid #000000;
+}
+
+/* 
+.box>p 
+p
+.box
+
+*/
+
+                                   /*TASK-2*/
+
+
+.content {
+  color: red;
+  margin: 15px;
+}
+
+/*
+.content p
+ .content>p
+ div div
+ .content 
+ .content>*
+ div>p
+ 
+ 
+ */
+
+
+
+                                            /*Task-3*/
+
+.card-body>p {
+  border: 2px solid red;
+  color: blue;
+}
+
+/*
+    .card-body p           
+    .card-body
+    .card-body *
+    .card-body>*
+    .card .card-body p
+    .card>.card-body p
+    .card>.card-body 
+    .card .card-body 
+*/
+
+
+
+                                         /*Task-4*/
+
+.navbar{
+ background-color: lightblue;
+} 
+/* 
+    ul   
+    li
+    *
+    div
+    
+    
+    */
+
+
+                                           /*Task-5*/
+
+
+    .header h1
+  {
+      margin-top: 20px;
+      color:rgb(0, 255, 76);
+     }
+     /* 
+     h1
+     div h1
+    .header>h1
+    .header>h1
+    div>h1
+     * h1
+     *>h1
+    
+     */
+
+
+                                               /*Task-6*/
+ .footer>span{
+  padding:10px;
+  color:aqua;
+} 
+ /*
+ 
+ span
+ div>span
+ div span
+ .footer span
+ * span
+ *>span
+ * .footer span
+ * .footer>span
+ 
+ */
+
+
+                                           /*Task-7*/
+     
+                                           
+
+  .content-1{
+  border:1px solid rgba(8, 8, 8, 0.87);
+ }   
+ /*
+ .content-1 p
+ .content-1>p
+ * .content-1
+ *.content-1                         
+ .main-content>.content-1>p
+ .main-content>.content-1 p
+ .main-content .content-1>p
+ .main-content>.content-1 p
+ .main-content>* p
+ .main-content>*>p
+    
+    */
+
+
+                                          /*Task-8*/
+ 
+.nav{
+  margin-right:15px;
+  color:rgb(203, 23, 158);
+}
+/*
+li
+ul
+div
+*
+.nav>li
+.nav li
+.nav ul
+.nav>ul
+*/
+
+                                        /*Task-9*/
+
+
+ .photo{
+  background-color: lightgrey;
+} 
+/*
+
+
+.gallery
+section
+.gallery .photo
+.gallery>.photo
+.gallery div
+.gallery>div
+
+*/
+
+
+                                            /*Task-10*/
+.container>.footer>span{
+  border-radius:5px;
+  color:lightsalmon; 
+} 
+/*
+span
+ .footer
+.container .footer
+.container>.footer
+.container span
+.footer *
+.footer>*
+.container .footer span
+.container .footer>span
+.container>.footer span
+
+*/
+
