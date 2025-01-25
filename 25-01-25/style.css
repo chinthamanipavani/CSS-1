@@ -1,0 +1,275 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+    
+}
+.container-1{
+    display:grid;
+    border:2px solid black;
+    height:800px;
+    
+    grid-template-areas:
+    'a b b c'
+    'a d e f'
+    'a g h f'
+    ;
+
+    gap:10px;
+   
+    
+}
+.item{
+    display:grid;
+    border:2px solid ;
+    align-content: center;
+    justify-items:center;
+    /* place-content:center; */
+    /*place-items:center;*/
+    
+}
+.item-1{
+    grid-area: a;
+    
+}
+.item-2{
+    grid-area: b;
+    
+}
+.item-3{
+    grid-area: c;
+}
+.item-4{
+    grid-area: d;
+}
+.item-5{
+    grid-area: e;
+}
+.item-6{
+    grid-area: f;
+}
+.item-7{
+    grid-area: g;
+}
+.item-8{
+    grid-area: h;
+}
+@media (max-width :500px){
+    .container-1{
+        grid-template-areas: 
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f'
+        'g'
+        'h'
+        ;
+    }
+}
+@media(min-width : 501px) 
+and (max-width : 900px){
+    .container-1{
+        grid-template-areas: 
+        'a b'
+        'c d'
+        'e f'
+        'g h'
+        ;
+    }
+}
+.item-1,.item-2,.item-8{
+    background-color: lightgreen;
+}
+.item-3,.item-5,.item-6{
+    background-color: lightcoral;
+}
+.item-4,.item-7{
+    background-color: rgb(232, 165, 20);
+}
+
+.container-2{
+    display:grid;
+    gap:10px;
+    height:100vh;
+    grid-template-areas:
+    
+    'i i i'
+    'j k k'
+    'j l m'
+    'n n n'
+    ;
+}
+.box{
+    display:grid;
+    align-items: center;
+    justify-content:center;
+    border:2px solid red;
+}
+.box-1{
+    grid-area: i;
+}
+.box-2{
+    grid-area: j;
+    background-image: linear-gradient(50deg,rgb(118, 187, 86),rgb(214, 83, 120));    
+
+}
+.box-3{
+    grid-area: k;
+}
+.box-4{
+    grid-area: l;
+}
+.box-5{
+    grid-area: m;
+}
+.box-6{
+    grid-area: n;
+}
+@media (max-width : 500px){
+    .container-2{
+        grid-template-areas: 
+        'i'
+        'j'
+        'k'
+        'l'
+        'm'
+        'n'
+        ;
+    }
+}
+@media (min-width : 501px) and (max-width : 900px){
+    .container-2{
+        grid-template-areas: 
+        'i j'
+        'k l'
+        'm n'
+        ;
+    }
+}
+.box-1,.box-6{
+    background-image: linear-gradient(50deg,rgb(143, 109, 236),rgb(161, 124, 184));
+}
+.box-2{
+    background-image: linear-gradient(50deg,rgb(118, 196, 181));
+   
+}
+.box-3,.box-4,.box-5{
+    background-image: linear-gradient(50deg,rgb(77, 114, 214),rgb(85, 120, 162));
+}
+.container-3{
+    display: grid;
+    gap:10px;
+    height:100vh;
+    grid-template-areas: 
+    'o p p p q q'
+    'r p p p s s'
+    't u v v w x'
+    'y z v v ab ac'
+    ;
+}
+.items-1{
+    grid-area:o;
+
+}
+.items-2{
+    grid-area:p;
+    
+}
+.items-3{
+    grid-area:q;
+    
+}
+.items-4{
+    grid-area:r;
+    
+}
+.items-5{
+    grid-area:s;
+    
+}
+.items-6{
+    grid-area:t;
+    
+}
+.items-7{
+    grid-area:u;
+    
+}
+
+.items-8{
+    grid-area:v;
+    
+}
+.items-9{
+    grid-area:w;
+    
+}
+.items-10{
+    grid-area:x;
+    
+}
+.items-11{
+    grid-area:y;
+    
+}
+.items-12{
+    grid-area:z;
+    
+}
+.items-13{
+    grid-area:ab;
+    
+}
+.items-14{
+    grid-area:ac;
+    
+}
+@media (max-width : 500px){
+    .container-3{
+        grid-template-areas: 
+            'o'
+            'p'
+            'q'
+            'r'
+            's'
+            't'
+            'u'
+            'v'
+            'w'
+            'x'
+            'y'
+            'z'
+            'ab'
+            'ac'  
+        ;
+    }
+}
+@media (min-width : 501px) and (max-width : 900px){
+    .container-3{
+        grid-template-areas: 
+        'o p'
+        'q r'
+        's t'
+        'u v'
+        'w x'
+        'y z'
+        'ab ac'
+        ;
+    }
+}
+.items-1,.items-4,.items-6,.items-7,.items-9,.items-10,.items-11,.items-12,.items-13,.items-14{
+    background-image: linear-gradient(50deg,rgb(227, 143, 117),rgb(222, 63, 164));
+
+}
+.items-2,.items-8{
+    background-image: linear-gradient(50deg,rgb(81, 19, 148),rgb(230, 7, 238));   
+}
+.items-3,.items-5{
+    background-image: linear-gradient(50deg,rgb(65, 49, 82),rgb(58, 183, 222));
+}
