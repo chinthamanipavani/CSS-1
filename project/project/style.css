@@ -995,6 +995,7 @@ grid-area:a;
         align-items: center;
         width:25vw;
         padding:6px;
+        font-size:15px;
     }
     .nav>.anchor{
         display:flex;
