@@ -1,0 +1,119 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+.box-7{
+    /* border:2px solid red; */
+    background-color: blue;
+    padding:50px;
+    color:white;
+    height:100vh;
+    width:100vw;
+    /* padding:100px  150px 100px 150px; */
+    display:grid;
+    grid-template-areas:  
+    'a'
+    'b'
+    'c'
+    ;
+}
+.box-7>.container-1{
+    /* border:2px solid blue; */
+    place-items:center;
+    grid-area: a;
+
+}
+.box-7>.container-1>h1{
+    font-size:60px;
+}
+.box-7>.container-2{
+    /* border:2px solid blue; */
+    grid-area: b;
+
+}
+.box-7>.container-2>p{
+line-height:56px;
+font-size: 25px;
+text-align:center;
+}
+.box-7>.container-3{
+    /* border:2px solid blue; */
+    grid-area: c;
+    display:grid;
+    place-items:center;
+    grid-template-areas:  
+    'a b c d e'
+    ;
+
+}
+.box-7>.container-3>.item-1{
+          /* border:2px solid yellow; */
+         
+          grid-area:a;
+}
+.box-7>.container-3>.item-2{
+    /* border:2px solid yellow; */
+  
+    grid-area:b;
+ }
+.box-7>.container-3>.item-3{
+        /* border:2px solid yellow; */
+       
+        grid-area:c;
+}  
+.box-7>.container-3>.item-4{
+    /* border:2px solid yellow; */
+
+    grid-area:d;
+} 
+.box-7>.container-3>.item-5{
+    /* border:2px solid yellow; */
+    grid-area:e;
+} 
+@media (max-width : 500px){
+    .box-7>.container-3{
+        display:grid;
+        gap:20px;
+        font-size:15px;
+     justify-items: start;
+     place-content:center;
+       grid-template-areas:  
+    'a' 
+     'b'
+     'c'
+     'd'
+     'e'
+    ;
+    }
+    .box-7{
+       gap:15px;
+       
+    }
+    .box-7>.container-2>p{
+        line-height:40px;
+        font-size:15px;
+    }
+    .box-7>.container-1>h1{
+        font-size:50px;
+    }
+}
+
+
+@media (min-width : 501px)  and (max-width : 900px){
+    .box-7>.container-2>p{
+        line-height:35px;
+        font-size:20px;
+    }  
+    .box-7>.container-3{
+        display:grid;
+        padding:0px;
+        gap:10px;
+        font-size:15px;
+        grid-template-areas:  
+        'a b'
+        'c d'
+        'e f'
+        ;
+    } 
+}

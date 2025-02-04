@@ -1,0 +1,104 @@
+*{
+    padding:0px;
+     margin:0px;
+    box-sizing:border-box;
+}
+body{
+    width:100vw;
+    height:100vw;
+}
+.main-container{
+    border:2px solid red;
+    height:100vh;
+    width:100vw;
+    display: grid;
+    align-items:center;
+    grid-template-rows:  
+    'y z';
+}
+.main-container>.container-2{
+    grid-area: y;
+    border: 2px solid rgb(64, 15, 211);
+}
+.main-container>.container-1{
+    border:2px solid green;
+    height:100vh;
+    width:100vw;
+    position:relative;
+    place-items:center;
+    place-content:center;
+    grid-area:'z';
+    display:grid;
+    gap:30px;
+    grid-template-areas:  
+    'a a b c c'
+    'a a b d d'
+    'a a b d d'
+    'e e b d d'
+    'f f b g g'
+    'f f b h h'
+    'f f b h h'
+    'i i b h h'
+    ;
+}
+/* 4 sides of images and shapes and triangles */
+.main-container>.container-1>.box-1{
+    /* border:2px solid blue; */
+    grid-area: a;
+    
+}
+.main-container>.container-1>.box-1>img{
+    height:50%;
+    width:70%;
+}
+.main-container>.container-1>.box-2{
+    /* border:2px solid blue; */
+    grid-area: b;
+    display:none;
+}
+.main-container>.container-1>.box-3>{
+    /* border:2px solid blue; */
+    grid-area: c;
+    display:none;
+    left:0px;
+}
+.main-container>.container-1>.box-4{
+    /* border:2px solid blue; */
+    grid-area: d;
+}
+.main-container>.container-1>.box-4>img{
+    height:50%;
+    width:70%;
+}
+.main-container>.container-1>.box-5{
+    /* border:2px solid blue; */
+    grid-area: e;
+    display:none;
+}
+.main-container>.container-1>.box-6{
+    /* border:2px solid blue; */
+    grid-area: f;
+}
+.main-container>.container-1>.box-6>img{
+    height:50%;
+    width:70%;
+}
+.main-container>.container-1>.box-7{
+    /* border:2px solid blue; */
+    grid-area: g;
+    display:none;
+}
+.main-container>.container-1>.box-8>{
+    /* border:2px solid blue; */
+    grid-area: h;
+}
+.box-8>img{
+    height:50%;
+    width:70%;
+}
+.main-container>.container-1>.box-9>.container-1{
+    /* border:2px solid blue; */
+    grid-area: i;
+    display:none;
+}
+
