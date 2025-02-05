@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        body {
+            height: 100%;
+        }
+
+        .box-px {
+            width: 200px;
+            height: 100px;
+            border: 2px solid rgb(74, 34, 216);
+        }
+
+        .parent-percent {
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgb(33, 168, 87);
+        }
+
+        .child-percent {
+            width: 50%;
+            height: 50%;
+            border: 2px solid red;
+        }
+
+        .rem-paragraph {
+            font-size: 2rem;
+        }
+
+        .parent-em {
+            font-size: 16px;
+        }
+
+        .child-em {
+            font-size: 1.5em;
+        }
+
+        .box-vw {
+            width: 50vw;
+            border: 2px solid rgb(237, 207, 18);
+        }
+
+        .box-vh {
+            height: 25vh;
+            border: 2px solid black
+        }
+
+        .square-vmin {
+            width: 20vmin;
+            height: 20vmin;
+            border: 2px solid rgb(57, 48, 48);
+        }
+
+        .square-vmax {
+            width: 20vmax;
+            height: 20vmax;
+            border: 2px solid black;
+        }
+
+        .parent-relative {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 2px solid rgb(29, 7, 194);
+
+        }
+
+        .child-absolute {
+            width: 150px;
+            height: 150px;
+            border: 2px solid red;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        .parent-font {
+            width: fit-content;
+            border: 2px solid black;
+            font-size: 20px;
+        }
+
+        .child-font {
+            width: fit-content;
+            border: 2px solid rgb(9, 230, 68);
+            font-size: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task-1</h1>
+    <div class="box-px">Box with px units</div>
+    <h1>Task-2</h1>
+    <div class="parent-percent">
+        <div class="child-percent">Box with % units</div>
+    </div>
+    <h1>Task-3</h1>
+    <p class="rem-paragraph">This paragraph uses rem units.</p>
+    <h1>Task-4</h1>
+    <div class="parent-em">
+        <p class="child-em">This paragraph uses em units.</p>
+    </div>
+    <h1>Task-5</h1>
+    <div class="box-vw">Box with vw units</div>
+    <h1>Task-6</h1>
+    <div class="box-vh">Box with vh units</div>
+    <h1>Task-7</h1>
+    <div class="square-vmin">Square with vmin units</div>
+    <h1>Task-8</h1>
+    <div class="square-vmax">Square with vmax units</div>
+    <h1>Task-9</h1>
+    <div class="parent-relative">
+        <div class="child-absolute">Child Box</div>
+    </div>
+    <h1>Task-10</h1>
+    <div class="parent-font">
+        Parent Text
+        <div class="child-font">Child Text (Inherits Font Size)</div>
+    </div>
+</body>
+
+</html>
